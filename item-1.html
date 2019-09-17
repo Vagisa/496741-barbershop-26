@@ -7,7 +7,7 @@
   <body>
     <header>
         <nav>
-                <a>
+                <a href="index.html" aria-label="Главная страница Барбершопа «Бородинский»">
                     <img src="/img/logo.svg" width="111" height="24" 
                     alt="Мини-Логотип Барбершопа «Бородинский»">
                 </a>
@@ -20,7 +20,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <button type="button">
+                        <button type="button" aria-label="Личный кабинет">
                             <img src="img/login.svg" width="14" height="14" alt="Вход">
                             Вход
                         </button>
@@ -40,22 +40,22 @@
         </nav>
         <section>
             <h2>Фотографии</h2>
-            <img src="/img/Layer 47 copy.png" width="486" height="524" 
+            <img src="img/Layer 47 copy.png" width="486" height="524" 
             alt="Набор для путешествий «Baxter of California»">
             <ul>
                 <li>
-                    <a href="#">
-                        <img src="/img/Layer 45.png" width="166" height="175" alt="Крема">
+                    <a href="#" aria-label="Фотография кремов">
+                        <img src="img/Layer 45.png" width="166" height="175" alt="Крема">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="/img/Layer 46.png" width="166" height="175" alt="Косметичка">
+                    <a href="#" aria-label="Фотография косметички">
+                        <img src="img/Layer 46.png" width="166" height="175" alt="Косметичка">
                     </a>
                 </li>
                 <li>
-                    <a href="/img/Layer 47 copy.png">
-                        <img src="/img/Layer 47.png" width="166" height="175" alt="Набор">
+                    <a href="img/Layer 47 copy.png" aria-label="Фотография набора">
+                        <img src="img/Layer 47.png" width="166" height="175" alt="Набор">
                     </a>
                 </li>
             </ul>
@@ -90,7 +90,7 @@
         <p>
             Барбершоп «Бородинский»<br>
             Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a href="map.html">Как нас найти?</a><br>
+            <a href="map.html" aria-label="Карта с адресом">Как нас найти?</a><br>
             Телефон: +7 (495) 666-02-66
         </p>
         <div>
@@ -118,8 +118,40 @@
         </div>
         <p>
             Разработано:
-            <a href="https://htmlacademy.ru">HTML Academy</a>
+            <a href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">HTML Academy</a>
         </p>
     </footer>
+    <section>
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label>
+            <input type="text" name="login" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="password" name="password" placeholder="*******">
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="remember">
+            Запомните меня. <a href="#" aria-label="Восстановление пароля">Я забыл пароль!</a>
+          </label>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
+      <button type="button">Закрыть</button> 
+    </section>
+    <section>
+      <h2>Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="780" height="560" 
+        alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button type="button">Закрыть</button> 
+    </section>
   </body>
 </html>
