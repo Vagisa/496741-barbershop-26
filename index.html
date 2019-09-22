@@ -184,20 +184,22 @@
       <p>Введите свой логин и пароль.</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
         <p>
-          <input class="login-icon-user" type="text" name="login" placeholder="email@example.com">
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="login-icon-user" id="user-login" type="text" name="login" 
+            placeholder="email@example.com">
         </p>
         <p>
-          <input class="login-icon-password" type="password" name="password" placeholder="*******">
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="login-icon-password" id="user-password" type="password" name="password" 
+            placeholder="••••••••">
         </p>
         <p class="login-password-info">
           <label class="login-checkbox">
             <input type="checkbox" name="remember" class="visually-hidden">
             <span class="checkbox-indicator"></span>
-            Запомните меня. 
-            <a class="restore" href="#" aria-label="Восстановление пароля">
-              Я забыл пароль!
-            </a>
+            Запомните меня
           </label>
+          <a class="restore" href="#" aria-label="Восстановление пароля">Я забыл пароль!</a>
         </p>
         <button class="button" type="submit">Войти</button>
       </form>
