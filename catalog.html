@@ -11,7 +11,7 @@
   </head>
   <body class="inner-page">
     <header class="main-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation container">
                 <a class="main-header-logo" href="index.html" 
                 aria-label="Главная страница Барбершопа «Бородинский»">
                     <img src="/img/logo.svg" width="111" height="24" 
@@ -21,7 +21,7 @@
                     <li><a href="info.html">Информация</a></li>
                     <li><a href="news.html">Новости</a></li>
                     <li><a href="price.html">Прайс-лист</a></li>
-                    <li><a href="catalog.html">Магазин</a></li>
+                    <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="user-navigation">
@@ -41,6 +41,7 @@
             <li><a href="catalog.html">Магазин</a></li>
             <li class="breadcrumbs-current">Средства для ухода</li>
         </ul>
+        <div class="catalog-columns">
         <section class="filters">
             <h2 class="visually-hidden">Фильтр</h2>
             <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
@@ -228,43 +229,46 @@
                 </li>
             </ul>
         </section>
+        </div>
     </main>
     <footer class="main-footer">
-        <p class="footer-contacts">
-            Барбершоп «Бородинский»<br>
-            Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a href="map.html" aria-label="Карта с адресом">Как нас найти?</a><br>
-            Телефон: +7 (495) 666-02-66
-        </p>
-        <div class="footer-social">
-            <p>Давайте дружить!</p>
-            <ul>
-                <li>
-                    <a class="social-button" href="#">
-                        <img src="img/vk.svg" width="27" height="15" alt="Вконтакте">
-                        Вконтакте
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button" href="#">
-                        <img src="img/facebook.svg" width="11" height="22" alt="Фейсбук">
-                        Фейсбук
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button" href="#">
-                        <img src="img/instagram.svg" width="20" height="20" alt="Инстаграм">
-                        Инстаграм
-                    </a>
-                </li>
-            </ul>
+        <div class="container">
+            <p class="footer-contacts">
+                Барбершоп «Бородинский»<br>
+                Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                <a href="map.html" aria-label="Карта с адресом">Как нас найти?</a><br>
+                Телефон: +7 (495) 666-02-66
+            </p>
+            <div class="footer-social">
+                <p>Давайте дружить!</p>
+                <ul>
+                    <li>
+                        <a class="social-button" href="#">
+                            <img src="img/vk.svg" width="27" height="15" alt="Вконтакте">
+                            Вконтакте
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">
+                            <img src="img/facebook.svg" width="11" height="22" alt="Фейсбук">
+                            Фейсбук
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">
+                            <img src="img/instagram.svg" width="20" height="20" alt="Инстаграм">
+                            Инстаграм
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                Разработано:
+                <a class="button" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">
+                    HTML Academy
+                </a>
+            </p>
         </div>
-        <p class="footer-copyright">
-            Разработано:
-            <a class="button" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">
-                HTML Academy
-            </a>
-        </p>
     </footer>
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
